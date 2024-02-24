@@ -18,6 +18,8 @@ By the rule of the Delta Method, we have
 
 $$\sqrt{a + b}(\ln{\hat{R_1}} - \ln{\theta_1}) \xrightarrow{d} \mathcal{N}(0, \frac{\sigma_1^2}{\theta_1^{2}}), \sqrt{c + d}(\ln{\hat{R_2}} - \ln{\theta_2}) \xrightarrow{d} \mathcal{N}(0, \frac{\sigma_2^2}{\theta_2^{2}})$$
 
+$$(\ln{\hat{R_1}} - \ln{\theta_1}) \xrightarrow{d} \mathcal{N}(0, \frac{\sigma_1^2}{(a + b)\theta_1^{2}}), (\ln{\hat{R_2}} - \ln{\theta_2}) \xrightarrow{d} \mathcal{N}(0, \frac{\sigma_2^2}{(c + d)\theta_2^{2}})$$
+
 $$\sigma_{\ln{\hat{R_1}}}^{2} = \frac{\sigma_1^2}{(a + b)\hat{R_1^{2}}} = \frac{(1 - \hat{R_1})}{\hat{R_1}}, \sigma_{\ln{\hat{R_2}}}^{2} = \frac{\sigma_2^2}{(c + d)\hat{R_2^{2}}} = \frac{(1 - \hat{R_2})}{\hat{R_2}}$$
 
 Finally, according to the law of the Normal Difference Distribution, we have
