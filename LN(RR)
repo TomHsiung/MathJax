@@ -1,0 +1,25 @@
+According to the Table 1,
+
+$$\hat{R_1} = \frac{a}{a + b}, \hat{R_2} = \frac{c}{c + d}$$
+
+The distribution of \(\hat{R_1}\) as well as \(\hat{R_2}\) are not necessarily normal. Since the existence of asymptotic normality and the central limit theory, we have
+
+$$\sqrt{a + b}(\hat{R_1} - \theta_1) \xrightarrow{d} \mathcal{N}(0, \sigma_1^2), \sqrt{c + d}(\hat{R_2} - \theta_2) \xrightarrow{d} \mathcal{N}(0, \sigma_2^2)$$
+
+$$(\hat{R_1} - \theta_1) \xrightarrow{d} \mathcal{N}(0, \sigma_{\hat{R_1}}^{2}), (\hat{R_2} - \theta_2) \xrightarrow{d} \mathcal{N}(0, \sigma_{\hat{R_2}}^{2})$$
+
+Therefore, the \(\hat{R_1}\) and \(\hat{R_2}\) are normally distributed, given \(a + b\) as well as \(c + d\) are sufficiently large.
+
+The SE of R_1 and R_2 are derived from SD of \(R_1\) and \(R_2\),
+
+$$\sigma_{\hat{R_1}}^{2} = \frac{\sigma_1^2}{a + b} = \hat{R_1}(1 - \hat{R_1}), \sigma_{\hat{R_2}}^{2} = \frac{\sigma_2^2}{c + d} = \hat{R_2}(1 - \hat{R_2})$$
+
+By the rule of the Delta Method, we have
+
+$$\sqrt{a + b}(\ln{\hat{R_1}} - \ln{\theta_1}) \xrightarrow{d} \mathcal{N}(0, \frac{\sigma_1^2}{\theta_1^{2}}), \sqrt{c + d}(\ln{\hat{R_2}} - \ln{\theta_2}) \xrightarrow{d} \mathcal{N}(0, \frac{\sigma_2^2}{\theta_2^{2}})$$
+
+$$\sigma_{\ln{\hat{R_1}}}^{2} = \frac{\sigma_1^2}{(a + b)\hat{R_1^{2}}} = \frac{(1 - \hat{R_1})}{\hat{R_1}}, \sigma_{\ln{\hat{R_2}}}^{2} = \frac{\sigma_2^2}{(c + d)\hat{R_2^{2}}} = \frac{(1 - \hat{R_2})}{\hat{R_2}}$$
+
+Finally, according to the law of the Normal Difference Distribution, we have
+
+$$\ln{\hat{R_1}} - \ln{\hat{R_2}} \xrightarrow{d} \mathcal{N}(ln{\theta_1} - ln{\theta_2}, \sigma_{\ln{\hat{R_1}}}^{2} + \sigma_{\ln{\hat{R_2}}}^{2})$$
